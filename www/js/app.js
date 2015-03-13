@@ -57,11 +57,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
-        .state('app.erasmoove', {
+    .state('app.erasmoove', {
       url: "/erasmoove",
       views: {
         'menuContent': {
-          templateUrl: "templates/erasmoove.html"
+          templateUrl: "templates/erasmoove.html",
+          controller: 'ErasmooveCtrl'
         }
       }
     })

@@ -3,9 +3,9 @@
 <div class="title"> <h2> Trouve ton échange </h2></div>
 <form >
   <label class="item item-input">
-    <input type="text" placeholder="Recherche">
+    <input ng-model="query" type="text" placeholder="Recherche">
   </label>
-  <button  class="button button-positive">Trouver</button>
+  <button ng-click="getResults()" class="button button-positive">Trouver</button>
 </form>
 </ion-content>
 </ion-view>

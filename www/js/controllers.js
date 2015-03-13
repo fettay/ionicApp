@@ -46,3 +46,17 @@ angular.module('starter.controllers', [])
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 });
+
+.controller('ErasmooveCtrl', function($scope) {
+
+//   // $scope.getResults = function(){
+//   //   $http.get('localhost:1337/ojson/'+$scope.query).
+//   //     success(function(data) {
+//   //       console.log(data);
+//   // }).
+//   // error(function(data, status) {
+//   //       console.log(data + status);
+//   // });
+//   // }
+
+});
