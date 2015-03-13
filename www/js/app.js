@@ -61,8 +61,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/erasmoove",
       views: {
         'menuContent': {
-          templateUrl: "templates/erasmoove.html",
-          controller: 'ErasmooveCtrl'
+          templateUrl: "templates/erasmoove.html"
         }
       }
     })
