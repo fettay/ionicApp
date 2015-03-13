@@ -32,7 +32,6 @@ angular.module('starter.controllers', [])
     }, 1000);
   };
 })
-
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
     { title: 'Reggae', id: 1 },
@@ -45,18 +44,16 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
-});
+})
 
-.controller('ErasmooveCtrl', function($scope) {
+.controller('ErasmooveCtrl', function($scope, $stateParams,$http) {
+  console.log($scope.query);
 
-//   // $scope.getResults = function(){
-//   //   $http.get('localhost:1337/ojson/'+$scope.query).
-//   //     success(function(data) {
-//   //       console.log(data);
-//   // }).
-//   // error(function(data, status) {
-//   //       console.log(data + status);
-//   // });
-//   // }
-
-});
+  $scope.getResults = function(){
+    $http('localhost:1337/ojson/'+$scope.query).then(function(data) {
+        console.log(data);
+  },function(err) {
+        console.log(err);
+      });
+}
+})
